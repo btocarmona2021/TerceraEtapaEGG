@@ -20,6 +20,12 @@ public class Hotel extends Alojamiento{
         this.cantPisos = cantPisos;
         this.precioHabitaciones = precioHabitaciones;
     }
+    
+    public void calcPrecioHab(){
+        this.precioHabitaciones=50+(this.numeroCamas*this.cantHabitaciones*cantPisos);
+    }
+    
+    
 
     public int getCantHabitaciones() {
         return cantHabitaciones;

@@ -4,7 +4,7 @@ todas las clase hijas de Hoteles ya estan
 
 package entidad;
 
-public class HotelCincoEstrellas extends Hotel{
+public class HotelCincoEstrellas extends HotelCuatroEstrellas{
 
     private int cantSalonesConf;
 
@@ -15,13 +15,18 @@ public class HotelCincoEstrellas extends Hotel{
     public HotelCincoEstrellas() {
     }
 
-    public HotelCincoEstrellas(int cantSalonesConf, int cantSuites, int cantLimosinas, int cantHabitaciones, int numeroCamas, int cantPisos, double precioHabitaciones, String nombre, String direccion, String localidad, Gerente gerente) {
-        super(cantHabitaciones, numeroCamas, cantPisos, precioHabitaciones, nombre, direccion, localidad, gerente);
+    public HotelCincoEstrellas(int cantSalonesConf, int cantSuites, int cantLimosinas, char gimnasio, String nombreRestaurant, int capacidadRestaurant, int cantHabitaciones, int numeroCamas, int cantPisos, double precioHabitaciones, String nombre, String direccion, String localidad, Gerente gerente) {
+        super(gimnasio, nombreRestaurant, capacidadRestaurant, cantHabitaciones, numeroCamas, cantPisos, precioHabitaciones, nombre, direccion, localidad, gerente);
         this.cantSalonesConf = cantSalonesConf;
         this.cantSuites = cantSuites;
         this.cantLimosinas = cantLimosinas;
     }
 
+    @Override
+    public void calcPrecioHab() {
+        super.calcPrecioHab();
+        this.precioHabitaciones+=(15*cantLimosinas);
+    }
     public int getCantSalonesConf() {
         return cantSalonesConf;
     }
