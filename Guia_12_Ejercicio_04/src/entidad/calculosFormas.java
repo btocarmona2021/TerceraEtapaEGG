@@ -1,6 +1,7 @@
 package entidad;
 
 public interface calculosFormas {
+    
 
     public final double VALORPI = Math.PI;
 

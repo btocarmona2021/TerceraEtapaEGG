@@ -18,7 +18,7 @@ public class Alquiler {
     public Alquiler() {
     }
 
-    public Alquiler(Cliente cliente, String fechaAmarre, String fechaDesamarre, Barco barco, Enum posicionAmarre) {
+    public Alquiler(Cliente cliente,String fechaAmarre, String fechaDesamarre, Barco barco, Enum posicionAmarre) {
         this.cliente = cliente;
         Date amarre = new Date(fechaAmarre);
         Date desamarre = new Date(fechaDesamarre);
@@ -71,17 +71,17 @@ public class Alquiler {
 
     @Override
     public String toString() {
-        SimpleDateFormat formatter = new SimpleDateFormat("dd 'de' MMM 'de' YYYY");
         
+        SimpleDateFormat formatter = new SimpleDateFormat("dd 'de' MMM 'del' YYYY");
         StringBuilder sb = new StringBuilder();
         sb.append("Cliente= ").append(cliente.getNombre()).append("\n");
         sb.append("Fecha Amarre= ").append(formatter.format(fechaAmarre)).append("\n");
         sb.append("Fecha Desamarre= ").append(formatter.format(fechaDesamarre)).append("\n");
         sb.append("Barco= ").append(barco.getMatricula()).append("\n");
-        sb.append("Posicion Amarre= ").append(posicionAmarre);
+        sb.append("Posicion Amarre= ").append(posicionAmarre).append("\n");
         return sb.toString();
     }
-    
-    
+
+  
     
 }

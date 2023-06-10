@@ -2,8 +2,9 @@ package entidad;
 
 public class Rectangulo implements calculosFormas{
     
+    
         @Override
-    public double calculaArea (double a, double b){
+    public double calculaArea(double a, double b){
         
         return a*b;
     }

@@ -6,7 +6,6 @@ public class BarcoVelero extends Barco {
 
     private int cantMastiles;
 
-    private int potenciaCV;
 
     public BarcoVelero() {
     }
@@ -17,6 +16,7 @@ public class BarcoVelero extends Barco {
 
     }
 
+   
     @Override
     public double calculoTarifa(Date fechaA, Date fechaD) {
          
@@ -35,7 +35,6 @@ public class BarcoVelero extends Barco {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Cantidad Mastiles= ").append(cantMastiles).append("\n");
-        sb.append("Potencia CV= ").append(potenciaCV).append("\n");
         return sb.toString();
     }
 

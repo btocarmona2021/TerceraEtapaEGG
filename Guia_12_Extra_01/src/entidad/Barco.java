@@ -18,11 +18,12 @@ public class Barco {
         this.eslora = eslora;
         this.anioFabricacion = anioFabricacion;
     }
+    
 
     public double calculoTarifa(Date fechaA, Date fechaD) {
         int diasDeAmarre = fechaD.getDate() - fechaA.getDate();
         System.out.println("Total de dias de amarre " + diasDeAmarre + " dias");
-        return (eslora * 10) * diasDeAmarre;
+        return (this.eslora * 10) * diasDeAmarre;
     }
 
     public String getMatricula() {
