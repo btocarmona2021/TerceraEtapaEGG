@@ -13,12 +13,12 @@ public class Hotel extends Alojamiento{
     public Hotel() {
     }
 
-    public Hotel(int cantHabitaciones, int numeroCamas, int cantPisos, double precioHabitaciones, String nombre, String direccion, String localidad, Gerente gerente) {
+    public Hotel(int cantHabitaciones, int numeroCamas, int cantPisos, String nombre, String direccion, String localidad, Gerente gerente) {
         super(nombre, direccion, localidad, gerente);
         this.cantHabitaciones = cantHabitaciones;
         this.numeroCamas = numeroCamas;
         this.cantPisos = cantPisos;
-        this.precioHabitaciones = precioHabitaciones;
+       
     }
     
     public void calcPrecioHab(){
