@@ -1,5 +1,7 @@
 package entidad;
 
+import java.util.Comparator;
+
 public class Hotel extends Alojamiento{
 
     protected int cantHabitaciones;
@@ -18,11 +20,13 @@ public class Hotel extends Alojamiento{
         this.cantHabitaciones = cantHabitaciones;
         this.numeroCamas = numeroCamas;
         this.cantPisos = cantPisos;
-       
     }
+
+ 
     
     public void calcPrecioHab(){
         this.precioHabitaciones=50+(this.numeroCamas*this.cantHabitaciones*cantPisos);
+   
     }
     
     
@@ -68,4 +72,12 @@ public class Hotel extends Alojamiento{
         sb.append("Precio de Habitaciones= ").append(precioHabitaciones).append("\n");
         return sb.toString();
     }
+    public static Comparator<Hotel> comparaPrecio = new Comparator<Hotel>() {
+        @Override
+        public int compare(Hotel o1, Hotel o2) {
+            return Double.compare(o2.precioHabitaciones, o1.precioHabitaciones);
+        }
+    };
+    
+    
 }

@@ -1,6 +1,6 @@
 package entidad;
 
-public class AlojamientosExtras {
+public class AlojamientosExtras extends Alojamiento{
 
     protected boolean privado;
 
@@ -9,10 +9,13 @@ public class AlojamientosExtras {
     public AlojamientosExtras() {
     }
 
-    public AlojamientosExtras(boolean privado, int metrosCuadrados) {
+    public AlojamientosExtras(boolean privado, int metrosCuadrados, String nombre, String direccion, String localidad, Gerente gerente) {
+        super(nombre, direccion, localidad, gerente);
         this.privado = privado;
         this.metrosCuadrados = metrosCuadrados;
     }
+
+   
 
     public boolean isPrivado() {
         return privado;

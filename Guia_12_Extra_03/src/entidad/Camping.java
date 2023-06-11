@@ -1,6 +1,6 @@
 package entidad;
 
-public class Camping extends AlojamientosExtras{
+public final class Camping extends AlojamientosExtras{
 
     private int capMaxCarpas;
 
@@ -11,12 +11,14 @@ public class Camping extends AlojamientosExtras{
     public Camping() {
     }
 
-    public Camping(int capMaxCarpas, int cantBanios, boolean restaurant, boolean privado, int metrosCuadrados) {
-        super(privado, metrosCuadrados);
+    public Camping(int capMaxCarpas, int cantBanios, boolean restaurant, boolean privado, int metrosCuadrados, String nombre, String direccion, String localidad, Gerente gerente) {
+        super(privado, metrosCuadrados, nombre, direccion, localidad, gerente);
         this.capMaxCarpas = capMaxCarpas;
         this.cantBanios = cantBanios;
         this.restaurant = restaurant;
     }
+
+    
 
     public int getCapMaxCarpas() {
         return capMaxCarpas;

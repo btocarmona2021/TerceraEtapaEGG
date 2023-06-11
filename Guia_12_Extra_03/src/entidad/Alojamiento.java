@@ -1,5 +1,6 @@
 package entidad;
 
+
 public class Alojamiento {
 
     protected String nombre;
@@ -51,6 +52,8 @@ public class Alojamiento {
     public void setGerente(Gerente gerente) {
         this.gerente = gerente;
     }
+    
+   
 
     @Override
     public String toString() {

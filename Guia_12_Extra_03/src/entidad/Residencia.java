@@ -1,6 +1,6 @@
 package entidad;
 
-public class Residencia extends AlojamientosExtras{
+public final class Residencia extends AlojamientosExtras{
 
     private int cantHabitaciones;
 
@@ -11,12 +11,13 @@ public class Residencia extends AlojamientosExtras{
     public Residencia() {
     }
 
-    public Residencia(int cantHabitaciones, boolean descuento, boolean campoDeportivo, boolean privado, int metrosCuadrados) {
-        super(privado, metrosCuadrados);
+    public Residencia(int cantHabitaciones, boolean descuento, boolean campoDeportivo, boolean privado, int metrosCuadrados, String nombre, String direccion, String localidad, Gerente gerente) {
+        super(privado, metrosCuadrados, nombre, direccion, localidad, gerente);
         this.cantHabitaciones = cantHabitaciones;
         this.descuento = descuento;
         this.campoDeportivo = campoDeportivo;
     }
+
 
     public int getCantHabitaciones() {
         return cantHabitaciones;

@@ -11,7 +11,6 @@ public class HotelCuatroEstrellas extends Hotel{
     public HotelCuatroEstrellas() {
     }
 
-
     public HotelCuatroEstrellas(char gimnasio, String nombreRestaurant, int capacidadRestaurant, int cantHabitaciones, int numeroCamas, int cantPisos, String nombre, String direccion, String localidad, Gerente gerente) {
         super(cantHabitaciones, numeroCamas, cantPisos, nombre, direccion, localidad, gerente);
         this.gimnasio = gimnasio;
@@ -30,6 +29,7 @@ public class HotelCuatroEstrellas extends Hotel{
             valAgregRest+=30;
         }
         this.precioHabitaciones+=valAgregRest;
+      
     }
     
     
