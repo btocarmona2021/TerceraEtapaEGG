@@ -7,7 +7,6 @@ import entidad.BarcoYate;
 import entidad.Cliente;
 import enumeracion.Posiciones;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Test {
 
@@ -28,17 +27,11 @@ public class Test {
 
         
         ArrayList<Alquiler> alquileres =new ArrayList<>();
+        
         alquileres.add(alquiler_01);
         alquileres.add(alquiler_02);
         alquileres.add(alquiler_03);
-        
-        
-//        for (Alquiler alquilere : alquileres) {
-//            System.out.println(alquilere.toString());
-//            System.out.println("precio por alquiler de amarre " + alquilere.getBarco().calculoTarifa(alquilere.getFechaAmarre(), alquilere.getFechaDesamarre())+" pesos");
-//            System.out.println("==================================");
-//            
-//        }
+
         
         for (int i = 0; i < alquileres.size(); i++) {
             System.out.print(alquileres.get(i));

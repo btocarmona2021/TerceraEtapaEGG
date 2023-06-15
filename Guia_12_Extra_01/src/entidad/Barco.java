@@ -21,7 +21,9 @@ public class Barco {
     
 
     public double calculoTarifa(Date fechaA, Date fechaD) {
+         
         int diasDeAmarre = fechaD.getDate() - fechaA.getDate();
+        
         System.out.println("Total de dias de amarre " + diasDeAmarre + " dias");
         return (this.eslora * 10) * diasDeAmarre;
     }
