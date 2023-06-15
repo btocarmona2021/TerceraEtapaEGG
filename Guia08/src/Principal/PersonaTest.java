@@ -12,7 +12,8 @@ public class PersonaTest {
         Persona persona02 = ps.crearPersona("Fabiana", 48, 'F', 65, 1.65);
         Persona persona03 = ps.crearPersona("Santiago", 15, 'M', 72, 1.70);
         Persona persona04 = ps.crearPersona("Olga", 71, 'F', 45, 1.55);
-
+               
+        
         Persona[] personas = {persona01, persona02, persona03, persona04};
 
         byte[] pesoideal = new byte[4];
@@ -60,5 +61,6 @@ public class PersonaTest {
         System.out.println("Hay un " + sobrePeso / 0.04 + " personas con sobre peso");
 
     }
-
+    
+   
 }
